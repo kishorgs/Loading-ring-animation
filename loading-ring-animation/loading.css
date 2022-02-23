@@ -1,0 +1,36 @@
+*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+
+	html{
+		font-size: 62.5%;
+	}
+
+	section{
+		width:100vw;
+		height:100vh;
+		background:#1e272e;
+		display: grid;
+		place-items:center;
+	}
+
+	div{
+		width:15rem;
+		height:15rem;
+		background:transparent;
+		border:1rem solid #fff;
+		border-radius: 50%;
+		border-top: 1rem solid red;
+		animation: load 2s linear infinite;
+	}
+
+	@keyframes load{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
